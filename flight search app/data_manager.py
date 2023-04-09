@@ -1,8 +1,8 @@
 import requests
 import os
 
-SHEET_ENDPOINT = os.get_env("SHEET_ENDPOINT")   #"https://api.sheety.co/5ddd6763737597f66cf52f12d44f1a85/flightDeals/prices"
-SHEET_USERS_ENDPOINT = os.get_env("USER_ENDPOINT")   #"https://api.sheety.co/5ddd6763737597f66cf52f12d44f1a85/flightDeals/users"
+SHEET_ENDPOINT = os.get_env("SHEET_ENDPOINT")  
+SHEET_USERS_ENDPOINT = os.get_env("USER_ENDPOINT"
 
 
 class DataManager:
