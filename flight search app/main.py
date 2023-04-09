@@ -15,13 +15,6 @@ sheet_data = sheetly.getWorksheetData()
 users_data = sheetly.get_Users_data()
 emails_list = [email['email'] for email in users_data]
 
-# sheet_data = [{'city': 'Sydney', 'iataCode': 'SYD', 'lowestPrice': 551, 'id': 5},
-#               {'city': 'Istanbul', 'iataCode': 'IST', 'lowestPrice': 95, 'id': 6},
-#               {'city': 'Kuala Lumpur', 'iataCode': 'KUL', 'lowestPrice': 414, 'id': 7},
-#               {'city': 'New York', 'iataCode': 'NYC', 'lowestPrice': 240, 'id': 8},
-#               {'city': 'Cape Town', 'iataCode': 'CPT', 'lowestPrice': 378, 'id': 10},
-#               {'city': 'San Francisco', 'iataCode': 'SFO', 'lowestPrice': 260, 'id': 9}]
-
 iata_list = [item['iataCode'] for item in sheet_data if len(item['iataCode']) > 0]
 
 if not iata_list:
